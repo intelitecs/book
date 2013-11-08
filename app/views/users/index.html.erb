@@ -1,0 +1,49 @@
+
+<div class="row">
+
+  <div class="large-16 columns">
+    <h1>Table des utilisateurs</h1>
+
+    <div class="row user_management">
+      <div class="large-10 columns">
+        <i data-tooltip title="Créer un nouveau compte"    class="tip-top article-create icon-save icon-large"></i>
+            <span >
+              <i data-tooltip title="Modifier les comptes sélectionnés"   class="tip-top article-update icon-edit icon-large"></i>
+              <i data-tooltip title="supprimer les comptes sélectionnés"  class="tip-top article-delete icon-trash icon-large"></i>
+            </span>
+      </div>
+    </div>
+    <hr class="separator" />
+    <div class="row">
+      <div class="large-12 columns">
+        <!--<div ng-show="getDone().length != 0">
+          <span><b>{{getDone().length}}</b> comptes sélectionnés</span>
+        </div> -->
+        <p><h4 class="users_count"></h4></p>
+      </div>
+    </div>
+    <div class="table row users_table">
+
+      <table class="large-5 columns responsible">
+        <thead>
+        <tr>
+          <th class="selection">Selection</th>
+          <th>Pseudo</th>
+          <th>Adresse email</th>
+        </tr>
+        </thead>
+        <tbody class="users_table_body">
+        </tbody>
+      </table>
+
+      <!--<div class="large-5 columns pull-6 user_infos" ng-show="table_row_user">
+        <h4 class="title">{{table_row_user.username}}   {{table_row_user.email}}</h4>
+        <h5 class="published_date"><b class="date">{{table_row_user.created_at | date: 'fullDate'}}</b> | <i class="number">n° {{table_row_user.id}}</i></h5>
+        <p><h6 class="description">{{table_row_user.comments.length}} commentaires</h6></p>
+        <hr class="article_info_separator" />
+
+      </div> -->
+    </div>
+  </div>
+</div>
+

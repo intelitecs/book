@@ -1,0 +1,117 @@
+<div class="content">
+
+<% unless !signed_in?  %>
+<form class="row push-2">
+  <div class="large-10 columns push-1">
+    <input type="text" size="70" id="article_search" />
+  </div>
+  <div class="large-2 columns pull-4">
+    <i class="icon-search search"></i>
+  </div>
+</form>
+<% end %>
+<div class="row articles-controls">
+  <div class="large-4 columns articles_browser">
+    <i class="tip-top article-prev icon-large icon-chevron-sign-left"  data-tooltip title="oeuvre précédente"></i>
+    <i class="tip-top article-next icon-large icon-chevron-sign-right" data-tooltip title="oeuvre suivante"></i>
+    <% unless !admin_user? %>
+       <i class="icon-large icon-plus-sign"></i>
+    <% end %>
+  </div>
+  <div class="large-3 columns  pull-1 articles_management">
+    <i data-tooltip title="Créer une nouvelle oeuvre"      class="tip-top article-create icon-save icon-large"></i>
+    <i data-tooltip title="mettre à jour cette oeuvre"     class="tip-top article-update icon-edit icon-large"></i>
+    <i data-tooltip title="supprimer cette oeuvre"         class="tip-top article-delete icon-trash icon-large"></i>
+  </div>
+  <br/>
+  <br/>
+
+</div>
+<div class="row article_block" data-articles="<%= @articles %>">
+
+  <div class="large-12 columns article">
+    <img class="current" />
+  </div>
+
+
+  <div class="large-4 columns article_infos">
+    <h4 class="title"></h4>
+    <h5 class="published_date"><b class="date"></b> | <i class="number"></i> / <i class="total-articles"></i></h5>
+    <p><h6 class="description"></h6></p>
+    <hr class="article_info_separator" />
+    <ul class="social-networks">
+      <li class="social">
+        <i class="icon-large icon-twitter-sign"></i>
+        <i class="icon-large icon-facebook-sign"></i>
+        <i class="icon-large icon-linkedin-sign"></i>
+      </li>
+      <li class="network-action"><ul id="share-or-connection">
+        <li>se connecter avec facebook</li>
+        <li>partager sur facebook</li>
+      </ul></li>
+    </ul>
+
+
+
+    </div>
+
+  </div>
+
+
+</div>
+<br/>
+<br/>
+  <% unless !admin_user? %>
+    <div class="row comment_managment">
+      <div class="large-10 columns">
+                <span>
+                  <i data-tooltip title="Modifier les commentaires sélectionnés"    class="tip-top comment-update icon-edit icon-large"></i>
+                  <i data-tooltip title="supprimer les commentaires sélectionnés"   class="tip-top comment-delete icon-trash icon-large"></i>
+                </span>
+      </div>
+    </div>
+<% end %>
+
+<div class="row">
+  <div class="large-12 columns">
+    <hr class="separator" />
+    <div>
+      <span class="selection"></span>
+    </div>
+    <p><h4 class="comment_count"></h4></p>
+  </div>
+</div>
+<br/>
+<div class="row" >
+  <div class="large-12 columns comment_column"></div>
+</div>
+<!--<div class="row">
+  <div class="large-4 columns comments_browser">
+    <i class="tip-top prev_six_comments icon-large icon-chevron-sign-left"  data-tooltip title="5 commentaires précédents"></i>
+    <i class="tip-top next_six_comments icon-large icon-chevron-sign-right" data-tooltip title="5 commentaires suivants"></i>
+  </div>
+</div> -->
+
+<br/>
+<br/>
+
+  <form class=" push-1 create_article_form comment_form" data-current_user_id="<%= current_user.id if signed_in? %>">
+    <div class="row">
+      <div class="large-12 columns">
+        <textarea rows="20" cols="90" id="comment"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns">
+        <button  value="commenter"  class="comment-create" id="create_comment">Commenter</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</div>
+
+
+
+
+

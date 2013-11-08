@@ -1,0 +1,50 @@
+
+
+
+<%= form_for(@article, html:{class:'large-12 columns push-2 create_article_form'}) do |f|   %>
+   <%= render 'layouts/form_errors', object: f.object  %>
+   <h2>Créer un nouvel article</h2>
+   <fieldset>
+     <legend>Formulaire de création d'un nouvel article</legend>
+     <div class="row">
+       <div class="large-5 columns push-2">
+         <%= f.label :title, 'Titre'  %>
+       </div>
+       <div class="large-9 columns pull-2">
+         <%= f.text_field :title, options: {size:'55',autocmplete:'off'} %>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="large-5 columns push-2">
+         <%= f.label :description, 'Description' %>
+       </div>
+       <div class="large-8 columns pull-3">
+         <%= f.text_area :description, options: {placeholder:"description de l'article", cols:"70", rows:"15"} %>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="large-5 columns push-2">
+         <%= f.label :image, "Image de l'article" %>
+       </div>
+       <div class="large-8 columns pull-3">
+         <%= f.file_field :image %>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="large-5 columns">
+         <%= f.submit "Valider" , class:'create-article' %>
+       </div>
+     </div>
+
+   </fieldset>
+    <%= link_to 'Back', root_url %>
+<% end %>
+
+
+
+
+
+

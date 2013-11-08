@@ -1,0 +1,17 @@
+<div class="row"> <!-- Content Row -->
+  <div class="large-16 columns">
+    <div class="row">
+      <div class="large-12 columns main article-view-container">
+        <%= content_for?(:main) ? content_for(:main) : yield  %>
+      </div>
+      <%= render 'layouts/aside' %>
+    </div>
+  </div>
+  <% unless !content_for(:comments)  %>
+      <div class="row"> <!-- comments Row -->
+        <div class="large-16 columns article-comments-view-container">
+          <%= content_for(:comments) if content_for?(:comments)  %>
+        </div>
+      </div>
+  <% end %>
+</div> <!-- End Content Row-->

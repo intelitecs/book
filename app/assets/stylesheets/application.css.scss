@@ -1,0 +1,302 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require font-awesome
+ *= require foundation_and_overrides
+ *= require jquery-ui/ui-darkness
+ *= require_tree .
+ */
+
+
+@import "articles.css.scss";
+@import "jquery.ui.all.css.scss";
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: {size: 87.5%; family: Arial, 'Lucida Sans Unicode'};
+  line-height: 1.5;
+  text-align: left;
+
+}
+.blog_navigation{
+  background: #2F2F4F;
+  color: #ccccff;
+}
+
+.body{
+  padding-top:60px;
+  margin: 0 auto;
+  width: 85%;
+  clear: both;
+
+  //background: url("tibo.jpg");
+}
+
+i.profile,i.icon-envelope,i.icon-facebook-sign,i.icon-twitter-sign,i.icon-linkedin-sign{
+  cursor: pointer;
+}
+
+i[class *= "icon-"]{
+  background:#CCCCFF;
+  color: #2F2F4F;
+  margin: 0 2px;
+  padding: 5px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+i.search{
+  margin-left:36px;
+  border:1px solid gray;
+  line-height: 27px;
+  height: 40px;
+  padding: 6px 20px;
+  border-radius: 0;
+  //background: #FFF;
+  cursor:pointer;
+}
+
+hr[class="separator"]{
+  color: #2F2F4F;
+  background: #2F2F4F;
+  height: 5px;
+  font-size: 5px;
+  border: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+
+
+
+}
+
+
+button[class *="article-"],button[class *="comment-"],
+button[class="comment_article"]{
+  color: #CCCCFF;
+  background: #2F2F4F;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: none;
+  width: auto;
+  height: 30px;
+  line-height: 10px;
+  text-align: center;
+  //font-size:16px ;
+  font-weight: bold;
+
+}
+
+
+
+i[class ^="comment-"]{
+  color: #2F2F4F;
+  background:  #CCCCFF;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  line-height: 10px;
+  text-align: center;
+  //font-size:16px ;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+p.description{
+  text-align: left;
+}
+h3.article_title {
+  text-align: center;
+}
+
+h3.article_title, p.description {
+  color: #CCCCFF;
+  background: #2F2F4F;
+  width: 700px;
+  padding: 2px;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-bottom: 0.2%;
+  margin-top: 1.2%;
+  //padding-top: 10px;
+
+}
+p.description{
+  margin-bottom: 30px;
+}
+
+p[class="description"]{
+  width: 700px;
+  margin-bottom: 3%;
+  padding: 10px;
+}
+
+div.article_comments{
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+  height: 300px;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.article_comment{
+  color: #CCCCFF;
+  background: #2F2F4F;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  b.comment_created_date{
+    margin-left: 10%;
+  }
+  p.comment_body{
+    margin-left: 10%;
+  }
+
+  &:first-of-type{
+    margin-top: 10px;
+  }
+}
+
+div.articles_management{
+
+  width: 210px;
+  visibility: hidden;
+  padding: 10px 0;
+  &:hover{
+    //margin-left: -5%;
+  }
+
+
+}
+.position_management_on_hover{
+  margin-left: -30px ;
+  padding: 10px 0;
+}
+
+.done-true{
+  background: #FFF;
+  color: green;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+}
+
+.display-true{
+  visibility: visible;
+}
+
+form.create_article_form{
+
+  fieldset{
+    border:13px solid #2F2F4F;
+    background: #262232;
+    padding: 10px;
+    label{
+      color: #CCCCFF;
+    }
+
+
+    legend{
+      color: #CCCCFF;
+      background: #2F2F4F;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -ms-border-radius: 5px;
+      padding:10px;
+    }
+  }
+}
+
+form.create_article_form textarea{
+  height: 200px;
+  max-height: 200px;
+  width: 450px;
+  max-width: 450px;
+  background: #262232;
+  //background: #262232;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border: 10px solid #2F2F4F;
+  color:#CCCCFF;
+  font-weight:bold;
+  font-size:11px
+}
+
+form input#article_title,form input#article_image{
+  background: #262232;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border: 5px solid #2F2F4F;
+  color:#CCCCFF;
+  font-weight:bold;
+  font-size:16px;
+}
+
+form input#article_image{
+  padding: 10px;
+  width: 400px;
+}
+
+div.articles_browser{
+  //position: absolute;
+  background:#262232;
+  padding: 10px 0 10px 10px;
+  margin-right:10px;
+  //padding-right: -10px;
+  width: 180px;
+  border-radius:3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+div.comments_browser{
+  background:#211f2a;
+  padding: 10px 0 10px 10px;
+  margin-right:10px;
+  margin-top:-0.1em;
+  width: 732px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+

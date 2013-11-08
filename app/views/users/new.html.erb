@@ -1,0 +1,46 @@
+ <div class="row">
+   <div class="large-12 columns">
+     <%= form_for(@user, html: {class: 'user_form'}) do |f|   %>
+        <fieldset>
+          <legend>Formulaire de création d'un nouveau compte</legend>
+          <div class="row">
+            <div class="large-2 columns push-3">
+              <%= f.label :username, 'pseudo:' %>
+            </div>
+            <div class="large-8 columns pull-3">
+              <%= f.text_field :username, placeholder:"Pseudo", autocomplete:"off" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-2 columns push-3">
+              <%= f.label :email, 'email:' %>
+            </div>
+            <div class="large-8 columns pull-3">
+              <%= f.email_field :email, placeholder:"Email", autocomplete:"off" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-2 columns push-3">
+              <%= f.label :password, 'password:' %>
+            </div>
+            <div class="large-8 columns pull-3">
+              <%= f.password_field :password, placeholder:"Password", autocomplete:"off" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns push-1">
+              <%= f.label :password_confirmation, 'password confirmation:' %>
+            </div>
+            <div class="large-8 columns pull-3">
+              <%= f.password_field :password_confirmation, placeholder:"Password confirmation", autocomplete:"off" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns push-2">
+              <%= f.submit "Créer le compte" %>
+            </div>
+          </div>
+        </fieldset>
+     <% end %>
+   </div>
+ </div>

@@ -1,0 +1,84 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div[class="blog_form"]{
+  width: 750px;
+  border: none;
+  span{
+    color: #CCCCFF;
+  }
+  fieldset{
+    background: #2F2F4F;
+
+    legend{
+      color: #CCCCFF;
+      background: #2F2F4F;
+    }
+    table{
+      tr{
+
+        td{
+          text-align: left;
+        }
+      }
+    }
+    form{
+      padding-left: 2em;
+
+      input{
+        padding: 10px;
+        font: {size: 15px; family: Arial,Verdana,sans-serif; weight: bold;};
+        border: 1px solid #CCCCFF;
+        text-align: center;
+        width: 200px;
+        color: #2F2F4F;
+        box-shadow: rgba(0,0,0,0.1) 0 0 8px;
+        -moz-box-shadow: rgba(0,0,0,0.1) 0 0 8px;
+        -webkit-box-shadow: rgba(0,0,0,0.1) 0 0 8px;
+        &:hover{
+          box-shadow: rgba(0,0,0,0.2) 0 0 8px;
+          -moz-box-shadow: rgba(0,0,0,0.2) 0 0 8px;
+          -webkit-box-shadow: rgba(0,0,0,0.2) 0 0 8px;
+        }
+      }
+
+      input[type="file"]{
+        color: #CCCCFF;
+        width: 200px;
+      }
+
+      label{
+        margin-right:2px;
+        color: #CCCCFF;
+      }
+
+      input[type="submit"]{
+        width: 130px;
+        height: 40px;
+        margin-top: 2%;
+        background: #CCCCFF;
+        color: #262232;
+        font: {size: 19px; weight: bold; family: Arial,Verdana, sans-serif;};
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+      }
+      textarea{
+        max-width: 600px;
+      }
+    }
+
+    span{
+      margin-left: 5%;
+      a{
+        margin-left: 5%;
+        color: #CCCCFF;
+        &:hover{
+          background: none;
+        }
+      }
+    }
+
+  }
+}
+

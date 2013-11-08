@@ -1,0 +1,63 @@
+
+
+
+li.social{
+  //background: #2F2F4F;
+  list-style: none;
+  line-height: 30px;
+  margin-right:0;
+  //margin-top:120px;
+  padding-righ: 10px;
+  width: 180px;
+  i{
+    margin-right: 5px;
+  }
+}
+
+div.blog_navigation{
+  background: #2F2F4F;
+  height: 40px;
+
+
+  ul{
+     display: inline;
+    li{
+       list-style: none;
+       display: inline-block;
+       line-height: 40px;
+       width: 80px;
+
+
+      a{
+        color: #CCCCFF;
+        text-decoration: none;
+        margin-right: 1px;
+        width: 100px;
+
+        &:hover{
+          background: none;
+        }
+      }
+    }
+  }
+
+  ul[id="connexion_utility"]{
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    width: 24%;
+    li{
+      margin-top: -2em;
+    }
+
+
+  }
+}
+
+.top-bar{
+  //width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+
+}
+

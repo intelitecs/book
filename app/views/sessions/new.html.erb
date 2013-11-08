@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="large-10 columns">
+    <%= form_for(:session, url:sessions_path ,html: {class: 'create_article_form'}) do |f|   %>
+        <fieldset>
+          <legend>Formulaire d'authentication</legend>
+          <div class="row">
+            <div class="large-2 columns push-3">
+              <%= f.label :email, 'email:' %>
+            </div>
+            <div class="large-7 columns pull-4">
+              <%= f.email_field :email, placeholder:"Email", autocomplete: "off" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-2 columns push-3">
+              <%= f.label :password, 'password:' %>
+            </div>
+            <div class="large-7 columns pull-4">
+              <%= f.password_field :password, placeholder:"Password" %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-4 columns push-2">
+              <%= f.submit "Se connecter" %>
+            </div>
+          </div>
+        </fieldset>
+    <% end %>
+  </div>
+</div>

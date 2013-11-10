@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11f545e8-739c-41dc-be14-97dfff8c8218" name="Default" comment="" />
+    <list default="true" id="11f545e8-739c-41dc-be14-97dfff8c8218" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+    </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/user.rb" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1381754296991" ignored="false" />
@@ -59,8 +64,8 @@
     <file path="/20131104114030_add_admin_to_users.rb" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1383565281436" ignored="false" />
     <file path="/index.json.jbuilder" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1383572086458" ignored="false" />
     <file path="/show.json.jbuilder" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1383575221952" ignored="false" />
-    <file path="/production.rb" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1383952580291" ignored="false" />
-    <file path="/database.yml" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1384080644233" ignored="false" />
+    <file path="/production.rb" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1384082762869" ignored="false" />
+    <file path="/database.yml" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1384082891533" ignored="false" />
     <file path="/.gitignore" changelist="11f545e8-739c-41dc-be14-97dfff8c8218" time="1384080826555" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +107,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="30" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
+            <state line="6" column="3" selection-start="195" selection-end="240" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +116,7 @@
       <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="18" column="9" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +125,7 @@
       <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+            <state line="0" column="122" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,19 +140,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="3" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+            <state line="22" column="12" selection-start="589" selection-end="589" vertical-scroll-proportion="0.2722372">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="7" selection-start="487" selection-end="487" vertical-scroll-proportion="0.7277628">
+            <state line="18" column="7" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131104114030_add_admin_to_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
@@ -205,10 +209,11 @@
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/articles.css.scss" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -221,7 +226,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="254" />
-    <option name="y" value="219" />
+    <option name="y" value="121" />
     <option name="width" value="1283" />
     <option name="height" value="777" />
   </component>
@@ -671,7 +676,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="254" y="219" width="1283" height="777" extended-state="0" />
+    <frame x="254" y="121" width="1283" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -825,27 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="30" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="27" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
@@ -853,16 +837,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="3" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+        <state line="18" column="7" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="487" selection-end="487" vertical-scroll-proportion="0.7277628">
+        <state line="0" column="122" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="195" selection-end="240" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="9" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="12" selection-start="589" selection-end="589" vertical-scroll-proportion="0.2722372">
           <folding />
         </state>
       </provider>

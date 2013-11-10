@@ -28,6 +28,8 @@
     <data-source source="LOCAL" name="Rails blog: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b58ec825-96da-4aba-8b7d-b8bd5de29ae6">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:blog_development</jdbc-url>
+      <user-name>iheroz</user-name>
+      <user-password>dfc3dfc2dfcfdfd8dfc5dfd0</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

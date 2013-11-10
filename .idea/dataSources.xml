@@ -4,8 +4,6 @@
     <data-source source="LOCAL" name="Rails blog: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="78a8a8b4-2bba-4e19-b203-c25d395e36da">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:blog_test</jdbc-url>
-      <user-name>blog</user-name>
-      <user-password>dfc3dfc2dfcfdfd8dfc5dfd0</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -18,8 +16,6 @@
     <data-source source="LOCAL" name="Rails blog: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="462570ff-5446-48b8-9a0d-b21b8ee4bac7">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:blog_production</jdbc-url>
-      <user-name>blog</user-name>
-      <user-password>dfc3dfc2dfcfdfd8dfc5dfd0</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -32,8 +28,6 @@
     <data-source source="LOCAL" name="Rails blog: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b58ec825-96da-4aba-8b7d-b8bd5de29ae6">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:blog_development</jdbc-url>
-      <user-name>iheroz</user-name>
-      <user-password>dfc3dfc2dfcfdfd8dfc5dfd0</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

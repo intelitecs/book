@@ -40,7 +40,8 @@ group :development do
   gem 'quiet_assets'
 end
 
-
+#heroku integration
+gem 'rails_12factor' , group: :production
 
 #use underscore js library for collections manipulation
 gem 'underscore-rails'

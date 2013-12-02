@@ -88,7 +88,7 @@ $ ->
         $commentP.attr({id: "comment"+index,class:'commentBody'+index})
         $commentH5 = $('<h5 class="comment_body">').text(comment.body)
         $commentP.append($commentH5)
-        $commentP.css({'padding':'10px','marginTop':'10px',marginLeft:'130px',width: '600px'})
+        $commentP.css({'padding':'10px','marginTop':'10px',marginLeft:'50px',width: '600px'})
         $commentP.addClass('comment_body_class')
         $commentBodyDiv.append($commentP)
 

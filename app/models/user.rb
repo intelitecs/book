@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   #attr_accessor :email, :username, :password, :password_confirmation
+  #admin_user : jarode@me.com leticia1
   after_create :generate_remember_token
   default_scope{ order('created_at DESC')}
   has_attached_file :image, styles: {small:'200x150',medium:'400x350>', large: '600x500>'}
@@ -14,6 +15,23 @@ class User < ActiveRecord::Base
   #validates :email, format: {with: self::EmailRegex}
   has_many :comments, dependent: :destroy
   has_many :articles, through: :comments
+  has_many :accounts, dependent: :destroy
+
+  #Instance Methods
+
+  def has_facebook?
+    accounts.where(provider: 'facebook').any?
+  end
+
+  def has_twitter?
+    accounts.where(provider: 'twitter').any?
+  end
+
+  def has_linkedin?
+    accounts.where(provider: 'linkedin').any?
+  end
+
+
 
 
   #def self.from_omniauth(auth)

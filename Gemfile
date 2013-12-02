@@ -49,6 +49,10 @@ gem 'underscore-rails'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+
+# use oauth
+gem 'oauth2'
+
 # Use omniauth and omniauth-facebook
 #gem 'omniauth'
 #gem 'omniauth-facebook'
